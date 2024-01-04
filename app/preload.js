@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Get app version from package.json
-var appVersion = remote.app.getVersion();
+const appVersion = remote.app.getVersion();
 
 // Show app version in about.html
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +20,5 @@ window.addEventListener('DOMContentLoaded', () => {
     const element = document.getElementById(selector)
     if (element) element.innerText = text
   }
-  replaceText(`calc-version`, appVersion)
+  replaceText('calc-version', appVersion)
 });
