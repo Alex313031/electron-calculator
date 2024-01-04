@@ -26,13 +26,13 @@
   "dependencies": {
     "@electron/remote": "2.1.1",
     "electron-context-menu": "3.6.1",
-    "electron-log": "4.4.8"
+    "electron-log": "5.0.3"
   },
   "devDependencies": {
     "asar": "3.2.0",
     "electron": "22.3.27",
     "electron-builder": "23.6.0",
-    "eslint": "8.42.0",
+    "eslint": "8.43.0",
     "rimraf": "3.0.2"
   }
 }
