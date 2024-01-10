@@ -3,21 +3,20 @@
   "asar": true,
   "productName": "Electron Calculator",
   "appId": "com.electron.electron-calculator",
+  "generateUpdatesFilesForAllChannels": false,
   "directories": {
       "app": "app",
       "buildResources": "build",
       "output": "dist"
   },
+  "files": [ "**/*" ],
   "extraFiles": [
     {
-      "from": "assets/icon64.png"
+      "from": "assets/icon.png"
     },
     {
       "from": "assets/README.txt"
     }
-  ],
-  "files": [
-    "**/*"
   ],
   "linux": {
     "target": [
@@ -41,8 +40,8 @@
   "win": {
     "target": [
       "zip",
-      "nsis",
-      "portable"
+      "portable",
+      "nsis"
     ],
     "publisherName": "Alex313031",
     "executableName": "electron_calculator",
@@ -51,10 +50,22 @@
   "nsis": {
     "shortcutName": "Electron Calculator",
     "artifactName": "electron_calculator_setup_${version}_${arch}.${ext}",
+    "uninstallDisplayName": "Electron Calculator ${version}",
     "deleteAppDataOnUninstall": true,
-    "uninstallDisplayName": "Electron Calculator ${version}"
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
   },
   "portable": {
     "artifactName": "electron_calculator_portable_${version}_${arch}.${ext}"
+  },
+  "mac": {
+    "category": "public.app-category.utilities",
+    "icon": "build/icon.icns",
+    "darkModeSupport": true,
+    "artifactName": "electron_calculator_${version}_macos_${arch}.${ext}",
+    "target": [
+      "dmg",
+      "zip"
+    ]
   }
 }
