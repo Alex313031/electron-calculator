@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2023, Alexander David Frick @ Alex313031
+Copyright (c) 2024, Alexander David Frick @ Alex313031
 Copyright (c) 2020, Arun @ asbnotebook
 
 Redistribution and use in source and binary forms, with or without
