@@ -2,7 +2,8 @@
   "electronVersion": "22.3.27",
   "asar": true,
   "productName": "Electron Calculator",
-  "appId": "com.electron.electron-calculator",
+  "appId": "com.alex313031.electron-calculator",
+  "copyright": "Copyright © 2024 Alex313031",
   "generateUpdatesFilesForAllChannels": false,
   "directories": {
       "app": "app",
